@@ -1,0 +1,176 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #EFEFEF;
+}
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 3s ease-out forwards;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 0.4s;
+  }
+  
+  .animation-delay-300 {
+    animation-delay: 0.6s;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 0.8s;
+  }
+  
+  .animation-delay-500 {
+    animation-delay: 0.10s;
+  } 
+  /* You can add custom styles if needed, but Tailwind CSS classes should cover most of the styling */
+
+.text-primary {
+    @apply text-blue-600;
+  }
+  
+  .bg-primary {
+    @apply bg-blue-600;
+  }
+  
+  .bg-primary-dark {
+    @apply bg-blue-800;
+  }
+  
+  .bg-background {
+    @apply bg-white;
+  }
+  
+  .text-muted-foreground {
+    @apply text-gray-600;
+  }
+  
+  .bg-muted {
+    @apply bg-gray-100;
+  }
+  
+  /* Animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+     0%, 100% {
+        transform: translateY(0);
+     }
+     50% {
+        transform: translateY(-5px);
+     }
+  }
+  
+  @keyframes pulse {
+     0%, 100% {
+        transform: scale(1);
+     }
+     50% {
+        transform: scale(1.05);
+     }
+  }
+  
+  @keyframes spin {
+     from {
+        transform: rotate(0deg);
+     }
+     to {
+        transform: rotate(360deg);
+     }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease-in-out forwards;
+  }
+  
+  .animate-bounce {
+    animation: bounce 1s infinite;
+  }
+  
+  .animate-pulse {
+    animation: pulse 1.5s infinite;
+  }
+  
+  .animate-spin {
+    animation: spin 2s linear infinite;
+  }
+  
+  .animate-delay-100 {
+    animation-delay: 0.4s;
+  }
+  
+  .animate-delay-200 {
+    animation-delay: 0.8s;
+  }
+  
+  .animate-delay-300 {
+    animation-delay: 1.2s;
+  }
+  
+  .animate-delay-400 {
+    animation-delay: 1.6s;
+  }
+  
+  .animate-delay-500 {
+    animation-delay: 2s;
+  }
+  
+  .animate-delay-600 {
+    animation-delay: 2.4s;
+  }
+
+  @keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  @keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  .animate-slide-in-left {
+    animation: slideInLeft 1s ease-out;
+  }
+  .animate-slide-in-right {
+    animation: slideInRight 1s ease-out;
+  }
+  .animate-count-up {
+    animation: countUp 2s ease-out forwards;
+  }
+
+
+
+  .--e-global-color-primary {
+    background-color: #EFEFEF;
+  }
+  .headerfootercolor
+  {
+    background-color: #1a202c;
+  }
+  #navbar {
+    position: sticky;
+  
+    
+}
