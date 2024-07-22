@@ -211,7 +211,8 @@ app.post('/submit-resume', upload.single('resume'), async (req, res) => {
         res.status(500).json({ message: 'Error submitting the application. Please try again later.' });
     }
 });
+ const port = process.env.PORT || 4000;
 
-app.listen(3000);
+app.listen(port);
 
 console.log('Listening on port 3000...');
